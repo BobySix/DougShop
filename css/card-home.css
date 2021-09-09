@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+:root {
+    --white: #FFF;
+    --primary: rgb(216, 29, 29);
+}
+
+.card-home {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    position: relative;
+    width: 1200px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 20px;
+    padding: 20px;
+    margin-top: 10%;
+}
+
+.container .card {
+    width: 100%;
+    background: #0f0e1a;
+    border-radius: 10px;
+}
+
+.container .card .imgBx {
+    position: relative;
+    width: 100%;
+    height: 450px;
+    overflow: hidden;
+}
+
+.container .card .imgBx img {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: 0.5s all ease-in-out;
+    transform-origin: center;
+    border-radius: 10px;
+}
+
+.container .card:hover .imgBx img {
+    transform: scale(1.1);
+}
+
+.img-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: 0.5s all ease-in-out;
+    transform-origin: center;
+    border-radius: 10px;
+    background: rgba(0, 0, 0, 0.322);
+    opacity: 0;
+}
+
+.img-overlay:hover {
+    opacity: 1;
+}
+
+.img-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 50%;
+}
+
+.img-title .primary {
+    font-size: 20px;
+    font-weight: 400;
+    color: var(--white);
+    font-family: 'Poppins', sans-serif;
+}
+
+.img-title .btn-card {
+    width: 200px;
+    padding: 5px;
+    border-radius: 6px;
+    border: none;
+    background: var(--primary);
+    color: var(--white);
+}
+
+.btn-card:hover {
+    background: rgb(187, 26, 26);
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}

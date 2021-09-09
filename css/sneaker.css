@@ -1,0 +1,178 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.tudo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.home-tenis {
+    position: relative;
+    background: #fff;
+    min-height: 100vh;
+    top: 0;
+    left: 78px;
+    width: calc(100% - 78px);
+    transition: all 0.5s ease;
+    z-index: 2;
+}
+
+.sidebar.open~.home-tenis {
+    left: 250px;
+    width: calc(100% - 250px);
+}
+
+.home-tenis .text {
+    display: inline-block;
+    color: #ffffff;
+    font-size: 25px;
+    font-weight: 500;
+    margin: 18px
+}
+
+.text {
+    text-decoration: underline;
+    text-transform: uppercase;
+}
+
+.container {
+    position: relative;
+    width: 1200px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 20px;
+    padding: 20px;
+}
+
+.container .card {
+    width: 100%;
+    background: rgb(241, 241, 241);
+    border-radius: 10px;
+}
+
+.container .card .imgBx {
+    position: relative;
+    width: 100%;
+    height: 310px;
+    overflow: hidden;
+}
+
+.container .card .imgBx img {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: 0.5s all ease-in-out;
+    transform-origin: center;
+    border-radius: 10px;
+}
+
+.container .card:hover .imgBx img {
+    transform: scale(1.5);
+}
+
+.action {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+.action a {
+    position: relative;
+    list-style: none;
+    width: 40px;
+    height: 40px;
+    background: #FFF;
+    color: #000000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 4px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: 0.5s;
+    transform: translateX(60px);
+    text-decoration: none;
+}
+
+.action a:nth-child(2) {
+    transition-delay: 0.3s;
+}
+
+.container .card:hover .action a {
+    transform: translateX(0px);
+}
+
+.action a:hover {
+    background: rgb(216, 29, 29);
+    color: #FFF;
+}
+
+.action a span {
+    position: absolute;
+    right: 50px;
+    top: 20px;
+    transform: translateY(-50%) translateX(-20px);
+    white-space: nowrap;
+    padding: 4px 6px;
+    background: rgb(216, 29, 29);
+    color: #FFF;
+    font-weight: 500;
+    font-size: 12px;
+    border-radius: 4px;
+    pointer-events: none;
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.action a:hover span {
+    transform: translateY(-50%) translateX(0px);
+    opacity: 1;
+}
+
+.action a span::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    right: -4px;
+    width: 8px;
+    height: 8px;
+    background: rgb(216, 29, 29);
+    transform: translateY(-50%) rotate(45deg);
+}
+
+.container .card .content {
+    padding: 10px;
+}
+
+.container .card .content .productName h3 {
+    font-size: 18px;
+    font-weight: 500;
+    color: #000000;
+    margin: 5px 0;
+}
+
+.container .card .content .productName .prince_rating {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.container .card .content .prince_rating h2 {
+    font-size: 20px;
+    color: #000000;
+    font-weight: 500;
+}
+
+.container .card .content .prince_rating .bx {
+    color: #ffd513;
+}

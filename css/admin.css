@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+header {
+    background-color: rgb(216, 29, 29);
+    padding: 18px;
+    color: #FFF;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 30px;
+}
+
+main {
+    width: 30%;
+    padding: 10px 40px;
+}
+
+.title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+}
+.card {
+    background-color: #FFF;
+    border: 1px solid #ccc;
+    padding: 28px;
+    margin-top: 15px;
+    border-radius: 5px;
+}
+
+.lineInput {
+    display: grid;
+    margin-bottom: 10px;
+}
+
+input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    outline: 0;
+}
+
+button {
+    border: 0px;
+    padding: 10px;
+    outline: 0;
+    background-color: rgb(216, 29, 29);
+    color: #FFF;
+    border-radius: 2px;
+    transition: all ease 0.3s;
+}
+
+button:hover {
+    background-color: rgb(194, 26, 26);
+    cursor: pointer;
+}
+
+.content {
+    margin-top: 15px;
+}
+
+table {
+    border-collapse: collapse;
+    border: 1px solid #ccc;
+    width: 100%;
+}
+
+table th {
+    background-color: #FFF;
+    padding: 1px;
+    text-align: left;
+}
+
+table th, td {
+    padding: 1px 5px;
+    text-align: left;
+}
+
+table td img {
+    width: 22px;
+    height: 22px;
+}
+
+.center {
+    text-align: center;
+}

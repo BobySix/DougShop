@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/pagamento.css" />
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/footer.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+    <title>Pagamento - DougShop</title>
+</head>
+
+<body>
+    <div class="sidebar">
+        <div class="logo-details">
+            <div class="logo_name">DougShop</div>
+            <i class='bx bx-menu' id="btn"></i>
+        </div>
+        <ul class="nav-list">
+            <li>
+                <i class='bx bx-search'></i>
+                <input type="text" placeholder="Search...">
+                <span class="tooltip">Search</span>
+            </li>
+            <li>
+                <a href="index.html">
+                    <i class="fas fa-home"></i>
+                    <span class="links_name">Home</span>
+                </a>
+                <span class="tooltip">Home</span>
+            </li>
+            <li>
+                <a href="./roupas.html">
+                    <i class='bx bxs-t-shirt'></i>
+                    <span class="links_name">Roupas</span>
+                </a>
+                <span class="tooltip">Roupas</span>
+            </li>
+            <li>
+                <a href="./sneaker.html">
+                    <i class='bx bx-health'></i>
+                    <span class="links_name">Sneaker</span>
+                </a>
+                <span class="tooltip">Sneaker</span>
+            </li>
+            <li>
+                <a href="acessorios.html">
+                    <i class='bx bxs-star'></i>
+                    <span class="links_name">Acessórios</span>
+                </a>
+                <span class="tooltip">Acessórios</span>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="fas fa-info-circle"></i>
+                    <span class="links_name">Sobre</span>
+                </a>
+                <span class="tooltip">Sobre</span>
+
+                <li>
+                    <a href="login.html">
+                        <i class="fas fa-users"></i>
+                        <span class="links_name">Login</span>
+                    </a>
+                    <span class="tooltip">Login</span>
+                </li>
+
+                <li>
+                    <a href="admin.html">
+                        <i class="fas fa-cog"></i>
+                        <span class="links_name">Admin</span>
+                    </a>
+                    <span class="tooltip">Admin</span>
+                </li>
+            </li>
+        </ul>
+    </div>
+
+    <div class="wrapper">
+        <div class="container">
+            <article class="part card-details">
+                <h1>
+                    Detalhes do Pagamento
+                </h1>
+                <form action="" if="cc-form" autocomplete="off">
+                    <div class="group card-number">
+                        <label for="first">Número do Cartão</label>
+                        <input type="text" id="first" class="cc-num" type="text" maxlength="4" placeholder="&#9679;&#9679;&#9679;&#9679;">
+                        <input type="text" id="second" class="cc-num" type="text" maxlength="4" placeholder="&#9679;&#9679;&#9679;&#9679;">
+                        <input type="text" id="third" class="cc-num" type="text" maxlength="4" placeholder="&#9679;&#9679;&#9679;&#9679;">
+                        <input type="text" id="fourth" class="cc-num" type="text" maxlength="4" placeholder="&#9679;&#9679;&#9679;&#9679;">
+                    </div>
+                    <div class="group card-name">
+                        <label for="name">Nome dque está no Cartão</label>
+                        <input type="text" id="name" class="" type="text" maxlength="20" placeholder="Name Surname">
+                    </div>
+                    <div class="group card-expiry">
+                        <div class="input-item expiry">
+                            <label for="expiry">Data de Validade</label>
+                            <input type="text" class="month" id="expiry" placeholder="02">
+                            <input type="text" class="year" id="" placeholder="2017">
+                        </div>
+                        <div class="input-item csv">
+                            <label for="csv">CVV</label><a href="#what">?</a>
+                            <input type="text" class="csv">
+                        </div>
+                    </div>
+                    <div class="grup submit-group">
+                        <span class="arrow"></span>
+                        <input type="submit" class="submit" value="Confirmar Compra">
+                    </div>
+                </form>
+            </article>
+            <div class="part bg"></div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer">
+            <div class="social">
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+                <a href="#"><i class="fab fa-facebook"></i></a>
+            </div>
+
+            <ul class="list">
+                <li>
+                    <a href="#">Home</a>
+                </li>
+                <li>
+                    <a href="#">Roupas</a>
+                </li>
+                <li>
+                    <a href="#">Sneakers</a>
+                </li>
+                <li>
+                    <a href="#">Acessórios</a>
+                </li>
+                <li>
+                    <a href="#">Sobre</a>
+                </li>
+            </ul>
+
+            <p class="copyright">
+                DougShop &COPY; 2021
+            </p>
+        </div>
+        </div>
+    </footer>
+
+    <script src="./js/script-menu.js"></script>
+</body>
+
+</html>

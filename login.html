@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br" dir="ltr">
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="./css/login.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+  <div class="container">
+    <input type="checkbox" id="flip">
+    <div class="cover">
+      <div class="front">
+        <!-- <img src="images/frontImg.jpg" alt=""> -->
+        <div class="text">
+          <span class="text-1">Seja bem vindo a <br> DougShop</span>
+          <span class="text-2">Conecte-se Conosco</span>
+        </div>
+      </div>
+    </div>
+    <div class="forms">
+      <div class="form-content">
+        <div class="login-form">
+          <div class="title">Login</div>
+          <form action="#">
+            <div class="input-boxes">
+              <div class="input-box">
+                <i class="fas fa-envelope"></i>
+                <input id="userLog" type="text" placeholder="Insira seu E-mail" required>
+              </div>
+              <div class="input-box">
+                <i class="fas fa-lock"></i>
+                <input id="senhaLog" type="password" placeholder="Insira sua Senha" required>
+              </div>
+              <div class="text"><a href="#">Esqueceu a Senha?</a></div>
+              <div class="button input-box">
+                <input onclick="Logar(event)" type="submit" value="Entrar">
+              </div>
+              <div class="text sign-up-text">Não tem uma conta? <label for="flip">Cadastre-se agora!</label></div>
+            </div>
+          </form>
+        </div>
+        <div class="signup-form">
+          <div class="title">Inscrever-se</div>
+          <form action="#">
+            <div class="input-boxes">
+              <div class="input-box">
+                <i class="fas fa-user"></i>
+                <input id="user" type="text" placeholder="Insira seu Nome" required>
+              </div>
+              <div class="input-box">
+                <i class="fas fa-envelope"></i>
+                <input id="email" type="email" placeholder="Insira seu E-mail" required>
+              </div>
+              <div class="input-box">
+                <i class="fas fa-lock"></i>
+                <input id="pass" type="password" placeholder="Insira sua Senha" required>
+              </div>
+              <div class="button input-box">
+                <input onclick="Cadastrar()" type="submit" value="Entrar">
+              </div>
+              <div class="text sign-up-text">Já tem uma conta? <label for="flip">Conecte-se agora</label></div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="./js/user.js"></script>
+  <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+</body>
+
+</html>

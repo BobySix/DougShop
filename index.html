@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="pt-br" dir="ltr">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/carousel.css">
+    <link rel="stylesheet" href="./css/card-home.css">
+    <link rel="stylesheet" href="./css/footer.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DougShop</title>
+</head>
+
+<body>
+    <div class="sidebar">
+        <div class="logo-details">
+            <div class="logo_name">DougShop</div>
+            <i class='bx bx-menu' id="btn"></i>
+        </div>
+        <ul class="nav-list">
+            <li>
+                <i class='bx bx-search'></i>
+                <input type="text" placeholder="Search...">
+                <span class="tooltip">Search</span>
+            </li>
+            <li>
+                <a href="index.html">
+                    <i class="fas fa-home"></i>
+                    <span class="links_name">Home</span>
+                </a>
+                <span class="tooltip">Home</span>
+            </li>
+            <li>
+                <a href="./roupas.html">
+                    <i class='bx bxs-t-shirt'></i>
+                    <span class="links_name">Roupas</span>
+                </a>
+                <span class="tooltip">Roupas</span>
+            </li>
+            <li>
+                <a href="./sneaker.html">
+                    <i class='bx bx-health'></i>
+                    <span class="links_name">Sneaker</span>
+                </a>
+                <span class="tooltip">Sneaker</span>
+            </li>
+            <li>
+                <a href="acessorios.html">
+                    <i class='bx bxs-star'></i>
+                    <span class="links_name">Acessórios</span>
+                </a>
+                <span class="tooltip">Acessórios</span>
+            </li>
+
+            <li>
+                <a href="carrinho.html">
+                    <i class="fas fa-cart-arrow-down"></i>
+                    <span class="links_name">Carrinho</span>
+                </a>
+                <span class="tooltip">Carrinho</span>
+            </li>
+
+            <li>
+                <a href="sobre.html">
+                    <i class="fas fa-info-circle"></i>
+                    <span class="links_name">Sobre</span>
+                </a>
+                <span class="tooltip">Sobre</span>
+            </li>
+
+            <li>
+                <a href="login.html">
+                    <i class="fas fa-users"></i>
+                    <span class="links_name">Login</span>
+                </a>
+                <span class="tooltip">Login</span>
+            </li>
+            </li>
+        </ul>
+    </div>
+
+    <section class="home-section">
+        <div id="slider">
+            <input type="radio" name="slider" id="slide1" checked>
+            <input type="radio" name="slider" id="slide2">
+            <input type="radio" name="slider" id="slide3">
+            <input type="radio" name="slider" id="slide4">
+            <div id="slides">
+                <div id="overflow">
+                    <div class="inner">
+                        <div class="slide slide_1">
+                            <div class="slide-content">
+                                <p>Produtos com até 20% de desconto!</p>
+                            </div>
+                        </div>
+                        <div class="slide slide_2">
+                            <div class="slide-content">
+                                <p>Content for Slide 2</p>
+                            </div>
+                        </div>
+                        <div class="slide slide_3">
+                            <div class="slide-content">
+                                <p>Content for Slide 3</p>
+                            </div>
+                        </div>
+                        <div class="slide slide_4">
+                            <div class="slide-content">
+                                <p>Content for Slide 4</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="controls">
+                <label for="slide1"></label>
+                <label for="slide2"></label>
+                <label for="slide3"></label>
+                <label for="slide4"></label>
+            </div>
+            <div id="bullets">
+                <label for="slide1"></label>
+                <label for="slide2"></label>
+                <label for="slide3"></label>
+                <label for="slide4"></label>
+            </div>
+        </div>
+
+        <!-- CONTEUDO -->
+
+        <div class="row">
+            <div class="col">
+                <h2>Sejam bem vindo a DougShop</h2>
+            </div>
+        </div>
+
+        <div class="card-home">
+            <div class="container">
+                <div class="card">
+                    <div class="imgBx">
+                        <img src="./img/camisas-nike/barcelona/1.jpg">
+                        <a href="roupas.html">
+                            <div class="img-overlay">
+                                <div class="img-title">
+                                    <h3 class="primary">Camisas de Time da Nike</h3>
+                                    <button class="btn-card">Comprar</button>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="imgBx">
+                        <img src="./img/tenis-img/nike/AirJordan 1/1.jpg">
+                        <a href="roupas.html">
+                            <div class="img-overlay">
+                                <div class="img-title">
+                                    <h3 class="primary">Sneakers Nike</h3>
+                                    <button class="btn-card">Comprar</button>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+
+                <div class="card">
+                    <div class="imgBx">
+                        <img src="./img/acessorios/2.jpg">
+                        <a href="acessorios.html">
+                            <div class="img-overlay">
+                                <div class="img-title">
+                                    <h3 class="primary">Acessórios</h3>
+                                    <button class="btn-card">Comprar</button>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <!-- FOOTER -->
+        <footer>
+            <div class="footer">
+                <div class="social">
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                </div>
+
+                <ul class="list">
+                    <li>
+                        <a href="#">Home</a>
+                    </li>
+                    <li>
+                        <a href="#">Roupas</a>
+                    </li>
+                    <li>
+                        <a href="#">Sneakers</a>
+                    </li>
+                    <li>
+                        <a href="#">Acessórios</a>
+                    </li>
+                    <li>
+                        <a href="#">Sobre</a>
+                    </li>
+                </ul>
+
+                <p class="copyright">
+                    DougShop &COPY; 2021
+                </p>
+            </div>
+            </div>
+        </footer>
+    </section>
+
+    <!-- <script src="./js/script.js"></script> -->
+    <script src="./js/script-menu.js"></script>
+    <script src="./js/carousel.js"></script>
+    <script src="./js/cart.js"></script>
+</body>
+
+</html>

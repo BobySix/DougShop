@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/admin.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <title>Admin - DougShop</title>
+</head>
+<body>
+
+    <header>
+        <h1>DougShop - Admin</h1>
+    </header>
+
+    <div class="container">
+        <main>
+            <div class="title">
+                <h2>Produtos</h2>
+                <span>Lista de Produtos da Loja.</span>
+            </div>
+    
+            <div class="card">
+                <div class="lineInput">
+                    <label>Produto</label>
+                    <input type="text" id="produto" placeholder="Nome do Produto">
+                </div>
+    
+                <div class="lineInput">
+                    <label>Preço</label>
+                    <input type="number" id="valor" placeholder="Preço do Produto">
+                </div>
+    
+                <button onclick="produto.salvar()" id="btn1">Salvar</button>
+                <button onclick="produto.cancelar()">Limpar</button>
+            </div>
+    
+            <div class="content">
+                <table border="1">
+                    <thead>
+                        <th class="center">ID</th>
+                        <th>Produto</th>
+                        <th>Valor</th>
+                        <th class="center">Ações</th>
+                    </thead>
+                    <tbody id="tbody">
+                        
+                    </tbody>
+                </table>
+            </div>
+        </main>    
+    </div>
+    <script src="./js/admin.js"></script>
+    <script src="./js/script-menu.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+</body>
+</html>
